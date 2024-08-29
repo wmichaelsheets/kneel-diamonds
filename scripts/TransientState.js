@@ -1,3 +1,4 @@
+// Set up the transient state data structure and provide initial values
 const transientState = {
     "metal": "", 
     "size": 0.0, 
@@ -5,6 +6,7 @@ const transientState = {
     "cost": 0
 }
 
+// Functions to modify each property of transient state
 export const setMetal = (chosenMetal) => {
     transientState.metal = chosenMetal
 }
@@ -17,4 +19,7 @@ export const setStyle = (chosenStyle) => {
     transientState.style = chosenStyle
 }
 
-//How to do cost? Is it done here?
+// Placeholder for cost calculation. May need to be done elsewhere since this module is not DB aware.
+//export const setCost = (calculatedCost)
+
+// Function to convert transient state to permanent state

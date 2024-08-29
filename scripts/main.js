@@ -1,6 +1,8 @@
 import { MetalOptions } from './MetalOptions.js'
 
-const render = () => {
+const container = document.querySelector("#container")
+
+const render = async () => {
     const metalOptionsHTML = await MetalOptions()
 
     const composedHTML = `
@@ -9,15 +11,17 @@ const render = () => {
         <article class="choices">
             <section class="choices__metals options">
                 <h2>Metals</h2>
-                ${metalOptionsHTML}
+                 <div class="metal-options">${metalOptionsHTML}</div> 
             </section>
 
             <section class="choices__sizes options">
                 <h2>Sizes</h2>
+                <div class="size-options"></div> 
             </section>
 
             <section class="choices__styles options">
                 <h2>Styles</h2>
+                <div class="style-options"></div> 
             </section>
         </article>
 
@@ -33,3 +37,5 @@ const render = () => {
 
     container.innerHTML = composedHTML
 }
+
+render()
