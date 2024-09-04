@@ -1,33 +1,30 @@
 // Set up the transient state data structure and provide initial values
 const transientState = {
-    "metal": "", 
-    "size": 0.0, 
-    "style": "", 
-    "cost": 0
+    "metalId": "", 
+    "sizeId": 0.0, 
+    "styleId": ""
 }
 
 // Functions to modify each property of transient state
 export const setMetal = (chosenMetal) => {
-    transientState.metal = chosenMetal
+    transientState.metalId = chosenMetal
     console.log(transientState)
 }
 
 export const setSize = (chosenSize) => {
-    transientState.size = chosenSize
+    transientState.sizeId = chosenSize
     console.log(transientState)
 }
 
 export const setStyle = (chosenStyle) => {
-    transientState.style = chosenStyle
+    transientState.styleId = chosenStyle
     console.log(transientState)
 }
 
 // Placeholder for cost calculation. May need to be done elsewhere since this module is not DB aware.
 //export const setCost = (calculatedCost)
 
-//call transient state
-//map chosen metal, size, and style to each cost
-//accumulate the cost
+
 
 
 

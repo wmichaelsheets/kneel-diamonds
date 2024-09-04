@@ -72,25 +72,46 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "metal": "Sterling Silver",
-      "size": 0.5,
-      "style": "Classic",
-      "cost": 917.42
+      "metalId": 1,
+      "sizeId": 1,
+      "styleId": 1,
+      "id": 1
     },
     {
-      "metal": 2,
-      "size": 2,
-      "style": 2,
-      "cost": 0,
+      "metalId": 2,
+      "sizeId": 2,
+      "styleId": 2,
       "id": 2
     },
     {
-      "metal": 1,
-      "size": 1,
-      "style": 1,
-      "cost": 0,
+      "metalId": 3,
+      "sizeId": 3,
+      "styleId": 3,
       "id": 3
+    },
+    {
+      "metalId": 1,
+      "sizeId": 2,
+      "styleId": 3,
+      "id": 4
+    },
+    {
+      "metalId": 1,
+      "sizeId": 2,
+      "styleId": 3,
+      "id": 5
+    },
+    {
+      "metalId": 2,
+      "sizeId": 2,
+      "styleId": 2,
+      "id": 6
+    },
+    {
+      "metalId": 5,
+      "sizeId": 5,
+      "styleId": 3,
+      "id": 7
     }
   ]
 }
