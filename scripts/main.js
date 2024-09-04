@@ -2,6 +2,7 @@ import { MetalOptions } from './MetalOptions.js'
 import { StyleOptions } from './StyleOptions.js'
 import { SizeOptions } from './SizeOptions.js'
 import { SaveSubmission } from './OrderButton.js'
+import { Orders } from './PlacedOrders.js'
 
 const container = document.querySelector("#container")
 
@@ -10,6 +11,7 @@ const render = async () => {
     const styleOptionsHTML = await StyleOptions()
     const sizeOptionsHTML = await SizeOptions()
     const buttonHTML = await SaveSubmission()
+    const orderHTML = await Orders()
 
     const composedHTML = `
         <h1>Kneel Diamonds</h1>
@@ -37,11 +39,16 @@ const render = async () => {
 
         <article class="customOrders">
             <h2>Custom Jewelry Orders</h2>
-
+            ${orderHTML}
         </article>
     `
 
     container.innerHTML = composedHTML
 }
+
+document.addEventListener("newOrderCreated", render => {
+    console.log("State of data has changed. Regenerating HTML. . .")
+    //render()
+})
 
 render()

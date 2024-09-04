@@ -77,6 +77,20 @@
       "size": 0.5,
       "style": "Classic",
       "cost": 917.42
+    },
+    {
+      "metal": 2,
+      "size": 2,
+      "style": 2,
+      "cost": 0,
+      "id": 2
+    },
+    {
+      "metal": 1,
+      "size": 1,
+      "style": 1,
+      "cost": 0,
+      "id": 3
     }
   ]
 }
